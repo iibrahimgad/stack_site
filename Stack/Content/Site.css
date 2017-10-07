@@ -1,0 +1,1986 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+.carousel-inner > .item {
+    height: 635px;
+}
+
+
+ul.social li a.facebook:hover {
+    background-position: 0px -50px;
+}
+ul.social li a.facebook {
+    background-position: 0px 0px;
+}
+.info a:hover {
+    color: #009688;
+}
+ul.social li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../images/img-sprite.png) no-repeat 0px 0px;
+}
+body a:hover {
+    text-decoration: none;
+}
+.info a {
+    color: #FFF;
+}
+a:focus, a:hover {
+    text-decoration: none;
+    outline: none;
+}
+body a:focus, a:hover {
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #2a6496;
+    text-decoration: underline;
+}
+a:active, a:hover {
+    outline: 0;
+}
+
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+.navbar-nav>li>a {
+    font-size:25px;
+}
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    /*height: 630px;*/
+    overflow: hidden;
+}
+.caption{
+   margin-left:30%;
+   margin-left:30%;
+   width:40%;
+}
+.carousel-caption {
+    right: 20%;
+    left: 20%;
+    /*padding-bottom: 25%;*/
+}
+.header{
+    margin-top: -50px;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    /*color:white;*/
+    /*border-bottom: 1px solid #CCC;*/
+}
+.white{
+    color:white;
+}
+.navbar-inverse {
+    /*color: #FFF;*/
+    background-color: rgba(51,51,51,0.3);
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    color: #FFF;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>li>a:focus {
+    color: #FFF;
+    background-color: transparent;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #FFF;
+    text-decoration: none;
+    background-color:rgba(51,51,51,0.3) ;
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333;
+    white-space: nowrap;
+}
+a:hover, a:focus {
+    color: #333;
+    text-decoration: underline;
+}
+a:active, a:hover {
+    outline: 0;
+}
+
+/*body {
+    padding: 0;
+    margin: 0;
+    background: #FFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body a {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    text-decoration: none;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+body a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #028fcc;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}*/
+
+
+/*-- About --*/
+
+.about p,
+.services p,
+.team p,
+.contact p {
+    font-size: 16px;
+    color: #777;
+    margin: 0 auto;
+    width: 60%;
+    line-height: 30px;
+}
+
+.about-info {
+    text-align: left;
+}
+
+.about-info h3 {
+    text-align: left;
+    margin-bottom: 50px;
+}
+.align-text-right{
+    text-align: right;
+}
+p.about-p-1,
+p.about-p-2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+p.about-p-2 {
+    margin-bottom: 4px;
+}
+
+.about a {
+    padding: 10px 30px;
+    border-radius: 0;
+    background-color: #333;
+    border: none;
+    outline: none;
+    color: #EEE;
+}
+
+.about a:hover {
+    background-color: #009688;
+    color: #FFF;
+}
+
+
+/*-- //About --*/
+
+/*-- //Reset-Code --*/
+
+/*-- Index-Page-Styling --*/
+
+
+/*-- Top-Bar --*/
+
+.top-bar {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    padding: 70px 0;
+}
+
+
+/*-- Logo --*/
+
+.logo {
+    width: 30%;
+    float: left;
+}
+
+    .logo a {
+        font-size: 40px;
+        font-weight: bolder;
+        color: #EEE;
+    }
+
+        .logo a:hover {
+            color: #FFF;
+        }
+
+
+/*-- //Logo --*/
+
+
+/*-- Info --*/
+
+.info {
+    width: 40%;
+    float: left;
+    padding-top: 20px;
+}
+
+    .info .email,
+    .info .phone {
+        width: 50%;
+        float: left;
+    }
+
+    .info p {
+        color: #EEE;
+        font-size: 13px;
+    }
+
+    .info a {
+        color: #FFF;
+    }
+
+        .info a:hover {
+            color: #009688;
+        }
+
+    .info span.glyphicon {
+        margin-right: 5px;
+    }
+
+
+/*-- //Info --*/
+
+
+/*-- //Top-Bar --*/
+
+
+
+/*-- Paddings --*/
+
+.about,
+.skills,
+.services,
+.portfolio,
+.team,
+.clients,
+.contact {
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+    /*-- //Paddings --*/
+
+
+    /*-- Headings --*/
+
+    .about h1,
+    .services h2,
+    .portfolio h3,
+    .team h3,
+    .clients h3,
+    .contact h3 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+.underline1 {
+    height: 3px;
+    width: 75px;
+    background-color: #004393;
+    margin: 20px auto;
+}
+
+
+/*-- //Headings --*/
+
+
+
+
+
+/*-- Contact --*/
+
+.contact-grid {
+    text-align: left;
+}
+
+.contact input.text,
+.contact textarea {
+    width: 90%;
+    padding: 30px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 30px;
+}
+
+.contact textarea {
+    height: 125px;
+}
+
+.contact input.more_btn {
+    padding: 10px 50px;
+    border-radius: 0;
+    background-color: #333;
+    border: none;
+    outline: none;
+    color: #EEE;
+    margin-top: 20px;
+}
+
+    .contact input.more_btn:hover {
+        background-color: #028fcc;
+        color: #FFF;
+    }
+
+.contact h4 {
+    font-size: 25px;
+    /*text-align: left;*/
+    margin: 20px 0;
+}
+
+.contact-grid p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+}
+
+.contact-email,
+.contact-phone {
+    margin: 20px 0;
+    color: #393b48;
+}
+
+    .contact-email p,
+    .contact-phone p {
+        font-weight: 600;
+    }
+
+.contact a {
+    color: #333;
+}
+
+.contact span.glyphicon {
+    color: #00BCD4;
+    margin-right: 10px;
+}
+
+.contact h5 {
+    font-size: 20px;
+    /*text-align: left;*/
+    margin-bottom: 15px;
+}
+
+.address ul li {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 25px;
+}
+
+
+/*-- //Contact --*/
+
+
+/*-- Footer --*/
+
+.footer {
+    padding: 50px 0;
+    background-color: #333;
+}
+
+.copyright p {
+    color: #FFF;
+    text-align: center;
+}
+
+    .copyright p a {
+        color: #FFF;
+    }
+
+        .copyright p a:hover {
+            color: #009688;
+        }
+
+
+/*-- //Footer --*/
+
+
+/*-- Go-To-Top-Button --*/
+
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    border: none;
+    text-indent: 100%;
+    background: url("../images/to-top.png") no-repeat 0px 0px;
+}
+
+
+/*-- //Go-To-Top-Button --*/
+
+
+/*-- //Index-Page-Styling --*/
+
+
+/*-- Responsive-Code --*/
+
+@media screen and (max-width:1920px) {
+    .slider-info p {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .about,
+    .skills,
+    .services,
+    .portfolio,
+    .team,
+    .clients,
+    .contact {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width:1280px) {
+    .callbacks_tabs {
+        left: 43%;
+    }
+
+    .callbacks_nav {
+        top: 81.5%;
+    }
+
+    .slider-info {
+        padding-top: 225px;
+    }
+
+        .slider-info h3 {
+            font-size: 50px;
+        }
+
+        .slider-info p {
+            width: 45%;
+        }
+
+        .slider-info img {
+            width: 80px;
+        }
+
+    .underline1 {
+        margin-bottom: 50px;
+    }
+
+    .about p,
+    .services p,
+    .team p,
+    .contact p {
+        font-size: 15px;
+        width: 70%;
+    }
+
+    p.about-p-1,
+    p.about-p-2,
+    .services-item p,
+    .team-top-text p,
+    .contact-grid p {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .services-item {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .logo {
+        width: 50%;
+    }
+    .carousel-inner > .item {
+        height: 635px;
+    }
+
+    .info {
+        width: 50%;
+        padding-top: 15px;
+    }
+
+    .slider-info {
+        padding-top: 175px;
+    }
+
+        .slider-info h3 {
+            font-size: 45px;
+        }
+
+    .underline {
+        margin: 15px auto;
+    }
+
+    .slider-info p {
+        width: 50%;
+        font-size: 15px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .callbacks_tabs {
+        left: 41%;
+    }
+
+    .callbacks_nav.prev {
+        left: 22%;
+    }
+
+    .about,
+    .skills,
+    .services,
+    .portfolio,
+    .team,
+    .clients,
+    .contact {
+        padding: 50px 0;
+    }
+
+    .about-info h3 {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    p.about-p-1,
+    p.about-p-2 {
+        margin-bottom: 10px;
+    }
+
+    p.about-p-2 {
+        margin-bottom: 50px;
+    }
+
+    .skills h4 {
+        margin: 0 0 10px;
+    }
+
+    .skills-bars h5 {
+        margin-bottom: 0;
+    }
+
+    .underline1 {
+        margin-bottom: 35px;
+    }
+
+    .services-item {
+        padding: 20px 0 0px;
+    }
+
+        .services-item img {
+            width: 80px;
+        }
+
+    .underline2 {
+        margin: 10px auto;
+    }
+
+    .portfolio section {
+        margin-top: 50px;
+    }
+
+    .tabs nav a span {
+        font-size: 18px;
+    }
+
+    .team-top-text {
+        height: 225px;
+    }
+
+    .team h4 {
+        font-size: 20px;
+    }
+
+    .team h5 {
+        font-size: 16px;
+    }
+
+    .team-top-text p {
+        line-height: 23px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 225px;
+    }
+
+    ul.social {
+        margin: 90px 0 0 0;
+    }
+
+    .clients h4 {
+        font-size: 28px;
+        margin: 25px 0 30px;
+    }
+
+    .clients p {
+        font-size: 15px;
+        padding: 0 50px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .top-bar {
+        padding: 20px 0;
+    }
+    .carousel-inner > .item {
+        height: 635px;
+    }
+
+    .info {
+        text-align: right;
+    }
+
+        .info p {
+            font-size: 12px;
+        }
+
+    .top-bar .container,
+    .navbar .container,
+    .about .container,
+    .skills .container,
+    .services .container,
+    .team .container,
+    .clients .container,
+    .contact .container {
+        width: 100%;
+    }
+
+    .about h1,
+    .services h2,
+    .portfolio h3,
+    .team h3,
+    .clients h3,
+    .contact h3 {
+        font-size: 35px;
+    }
+
+    .about p,
+    .services p,
+    .team p,
+    .contact p {
+        font-size: 14px;
+        width: 75%;
+    }
+
+    p.about-p-1,
+    p.about-p-2,
+    .services-item p,
+    .team-top-text p,
+    .contact-grid p {
+        width: 100%;
+    }
+
+    .skills .progress-bar {
+        padding-left: 225px;
+    }
+
+    .service-grid {
+        padding: 0 5px;
+    }
+
+    .tabs nav {
+        margin-bottom: -30px;
+    }
+
+    .team-top-text {
+        height: 226px;
+    }
+
+        .team-top-text p {
+            font-size: 13px;
+        }
+
+    .flexslider img {
+        width: 125px;
+    }
+
+    .clients h4 {
+        font-size: 25px;
+        margin: 20px 0;
+    }
+
+    .clients p {
+        font-size: 14px;
+        padding: 0 25px;
+        line-height: 30px;
+    }
+
+    .contact h4 {
+        margin-bottom: 10px;
+    }
+
+    .contact-grid p {
+        font-size: 13px;
+    }
+
+    .contact h5 {
+        margin-bottom: 5px;
+    }
+
+    .address ul li {
+        font-size: 13px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .slider-info p {
+        width: 55%;
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 15px;
+    }
+    .carousel-inner > .item {
+        height: 635px;
+    }
+    .slider-info img {
+        width: 75px;
+    }
+
+    .callbacks_tabs {
+        left: 40%;
+    }
+
+    .callbacks_nav {
+        top: 83%;
+    }
+
+        .callbacks_nav.prev {
+            left: 20%;
+        }
+
+    .about-info h3 {
+        margin-bottom: 15px;
+    }
+
+    p.about-p-1,
+    p.about-p-2 p {
+        width: 100%;
+        line-height: 27px;
+        margin-bottom: 5px;
+    }
+
+    p.about-p-2 {
+        margin-bottom: 28px;
+    }
+
+    .skills-grid {
+        padding: 0 5px;
+    }
+
+    .skills .progress-bar {
+        padding-left: 210px;
+    }
+
+    .team-top-text {
+        height: 203px;
+    }
+
+    .team h4 {
+        margin: 10px 0 15px;
+    }
+
+    .team h5 {
+        margin-bottom: 15px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 203px;
+    }
+
+    ul.social {
+        margin: 70px 0 0 0;
+    }
+
+    .contact-email,
+    .contact-phone {
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width:853px) {
+    .callbacks_tabs {
+        left: 39.1%;
+    }
+
+    p.about-p-1,
+    p.about-p-2,
+    .services-item p,
+    .team-top-text p,
+    .contact-grid p {
+        font-size: 13px;
+    }
+    .carousel-inner > .item {
+        height: 635px;
+    }
+        p.about-p-1,
+        p.about-p-2 p {
+            line-height: 25px;
+        }
+
+    .skills .progress-bar {
+        padding-left: 200px;
+    }
+
+    .progress {
+        height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .service-grid {
+        padding: 0 10px;
+    }
+
+    .team h4 {
+        margin: 5px 0 10px;
+        font-size: 19px;
+    }
+
+    .team h5 {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+
+    .team-top-text p {
+        line-height: 22px;
+    }
+
+    .team-top-text {
+        height: 191.5px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 191px;
+    }
+
+    .contact input.more_btn {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .slider-info {
+        padding-top: 125px;
+    }
+    .carousel-inner > .item {
+        height: 635px;
+    }
+    .callbacks_tabs {
+        left: 38.5%;
+    }
+
+    .about p,
+    .services p,
+    .team p,
+    .contact p {
+        width: 85%;
+        line-height: 28px;
+    }
+
+    .about-info {
+        padding: 0;
+    }
+
+    .about-image {
+        padding: 0 5px;
+    }
+
+    p.about-p-2 {
+        margin-bottom: 25px;
+        line-height: 25px;
+    }
+
+    .skills .progress-bar {
+        padding-left: 185px;
+    }
+
+    .team-top-text {
+        padding: 0 5px;
+        height: 178px;
+    }
+
+    .team h4 {
+        margin: 10px 0 15px;
+    }
+
+    .team h5 {
+        margin-bottom: 15px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 178px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar-brand {
+        margin: .5em 0;
+    }
+    .carousel-inner > .item {
+        height: 380px;
+    }S
+    .navbar-default .navbar-toggle {
+        border-color: #212121;
+    }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #212121;
+        }
+
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+            background-color: transparent;
+        }
+
+    .navbar-toggle {
+        margin: 1.3em 0 0;
+    }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border: none;
+    }
+
+    .navbar-collapse {
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .navbar-nav {
+        margin: 0;
+        background: #212121;
+        padding: 0 0 1em;
+    }
+
+    p.about-p-1,
+    p.about-p-2,
+    .services-item p,
+    .team-top-text p,
+    .contact-grid p {
+        width: 100%;
+    }
+
+    .skills .progress-bar {
+        padding-left: 175px;
+    }
+
+    .team h4 {
+        margin: 5px 0 10px;
+        font-size: 18px;
+    }
+
+    .team h5 {
+        margin-bottom: 10px;
+    }
+
+    .team-top-text {
+        height: 170px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navbar-default .navbar-toggle {
+        border-color: #212121;
+        margin: 10px;
+        padding: 10px 8px;
+    }
+
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+            background-color: rgba(0, 0, 0, 0.43);
+        }
+
+    li.menu__item {
+        width: 20%;
+        margin: 0 auto;
+    }
+
+    .menu--francisco .menu__link {
+        padding: 10px 0;
+    }
+
+    .about-grid {
+        width: 50%;
+        float: left;
+    }
+
+    .skills-grid {
+        width: 50%;
+        float: left;
+    }
+
+    .service-grid {
+        width: 33.3%;
+        float: left;
+    }
+
+    .gallery-item {
+        width: 25%;
+        float: left;
+    }
+
+    .team-top {
+        padding: 0 5px;
+        text-align: left;
+        width: 25%;
+        float: left;
+    }
+
+    .team-top-text p {
+        line-height: 22px;
+    }
+
+    .contact-grid {
+        width: 50%;
+        float: left;
+    }
+
+    .contact input.more_btn {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:736px) {
+    .logo {
+        width: 40%;
+    }
+
+        .logo a {
+            font-size: 30px;
+        }
+
+    .info {
+        width: 60%;
+        padding-top: 12px;
+    }
+
+    .slider-info p {
+        width: 60%;
+    }
+
+    .slider-info h3 {
+        font-size: 40px;
+    }
+
+    .slider-info img {
+        width: 60px;
+    }
+
+    .callbacks_tabs {
+        left: 37.5%;
+    }
+
+    .navbar-header {
+        text-align: center;
+    }
+
+    .navbar-toggle {
+        position: relative;
+        float: none;
+        text-align: center;
+    }
+
+    .skills .progress-bar {
+        padding-left: 170px;
+    }
+
+    .team h4 {
+        margin: 7px 0;
+        font-size: 17px;
+    }
+
+    .team h5 {
+        margin-bottom: 5px;
+    }
+
+    .team-top-text {
+        height: 162px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 163px;
+    }
+
+    ul.social {
+        margin: 60px 0 0 0;
+    }
+}
+
+@media screen and (max-width:667px) {
+    .slider-info {
+        padding-top: 100px;
+    }
+
+        .slider-info p {
+            font-size: 13px;
+        }
+
+    .callbacks_tabs {
+        left: 36%;
+    }
+
+    .callbacks_nav {
+        top: 84%;
+    }
+
+        .callbacks_nav.prev {
+            left: 15%;
+        }
+
+        .callbacks_nav.next {
+            right: 75%;
+        }
+
+    .about p,
+    .services p,
+    .team p,
+    .contact p {
+        width: 90%;
+        font-size: 13px;
+    }
+
+    p.about-p-1,
+    p.about-p-2,
+    .services-item p,
+    .team-top-text p,
+    .contact-grid p {
+        width: 100%;
+    }
+
+    .skills .progress-bar {
+        padding-left: 150px;
+    }
+
+    .service-grid {
+        padding: 0 2px;
+    }
+
+    .team h4 {
+        margin: 5px 0;
+        font-size: 15px;
+    }
+
+    .team h5 {
+        font-size: 13px;
+    }
+
+    .team-top-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .team-top-text {
+        height: 145px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 145px;
+    }
+
+    ul.social li a {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background: url("../images/img-sprite.png") no-repeat 0px 0px;
+        background-size: 200px;
+    }
+
+        ul.social li a.facebook:hover {
+            background-position: 0px -33px;
+        }
+
+        ul.social li a.twitter {
+            background-position: -35px 0px;
+        }
+
+            ul.social li a.twitter:hover {
+                background-position: -35px -33px;
+            }
+
+        ul.social li a.googleplus {
+            background-position: -69px 0px;
+        }
+
+            ul.social li a.googleplus:hover {
+                background-position: -69px -33px;
+            }
+
+    .clients p {
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 25px;
+    }
+
+    .contact-email,
+    .contact-phone {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .logo a {
+        font-size: 25px;
+    }
+
+    .info p {
+        font-size: 11px;
+    }
+
+    .slider-info h3 {
+        font-size: 30px;
+    }
+
+    .callbacks_tabs a:after {
+        width: 8px;
+        height: 8px;
+    }
+
+    .callbacks_tabs {
+        left: 37%;
+    }
+
+    .menu__item {
+        padding: 6px 0;
+    }
+
+    .progress {
+        height: 15px;
+    }
+
+    .skills .progress-bar {
+        padding-left: 140px;
+        line-height: 15px;
+    }
+
+    .team-top {
+        width: 50%;
+    }
+
+    .team-top-text {
+        height: 286.5px;
+        padding-left: 20px;
+    }
+
+    .team h4 {
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .team h5 {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .team-top-text p {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 286.5px;
+    }
+
+    ul.social {
+        margin: 130px 0 0 0;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .logo {
+        width: 37%;
+    }
+
+        .logo a {
+            font-size: 20px;
+        }
+
+    .info {
+        width: 63%;
+        padding-top: 7px;
+    }
+
+    .slider-info {
+        padding-top: 85px;
+    }
+
+    .underline {
+        margin: 10px auto;
+    }
+
+    .slider-info p {
+        width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .slider-info img {
+        width: 50px;
+    }
+
+    .callbacks_tabs {
+        left: 35.5%;
+    }
+
+    li.menu__item {
+        width: 30%;
+    }
+
+    .about,
+    .skills,
+    .services,
+    .portfolio,
+    .team,
+    .clients,
+    .contact {
+        padding: 30px 0;
+    }
+
+        .about h1,
+        .services h2,
+        .portfolio h3,
+        .team h3,
+        .clients h3,
+        .contact h3 {
+            font-size: 30px;
+        }
+
+        .about p,
+        .services p,
+        .team p,
+        .contact p {
+            width: 100%;
+            line-height: 25px;
+        }
+
+    p.about-p-1,
+    p.about-p-2,
+    .services-item p,
+    .team-top-text p,
+    .contact-grid p {
+        width: 100%;
+    }
+
+    p.about-p-1,
+    p.about-p-2 {
+        line-height: 25px;
+    }
+
+    .skills .progress-bar {
+        padding-left: 120px;
+    }
+
+    .team-top-text {
+        height: 250.5px;
+        padding-left: 10px;
+    }
+
+    .team h4 {
+        margin: 10px 0 20px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 250.5px;
+    }
+
+    ul.social {
+        margin: 120px 0 0 0;
+    }
+
+    .contact input.text,
+    .contact textarea {
+        width: 100%;
+    }
+
+    .contact textarea {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:533px) {
+    .logo {
+        width: 50%;
+    }
+
+    .info {
+        width: 50%;
+        padding-top: 0;
+    }
+
+        .info .email,
+        .info .phone {
+            width: 100%;
+            margin-left: 3px;
+        }
+
+        .info p {
+            line-height: 25px;
+        }
+
+    .callbacks_tabs {
+        left: 34.5%;
+    }
+
+    .callbacks_nav.prev {
+        left: 12%;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 90%;
+        margin: 30px 25px;
+    }
+
+    .skills-grid {
+        width: 85%;
+        margin: 20px 40px;
+        float: left;
+    }
+
+    .skills .progress-bar {
+        padding-left: 200px;
+    }
+
+    .service-grid {
+        width: 50%;
+    }
+
+    .team-top-text {
+        height: 233px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 233px;
+    }
+
+    ul.social {
+        margin: 110px 0 0 0;
+    }
+
+    .team h4 {
+        font-size: 24px;
+    }
+
+    .contact-grid p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .top-bar {
+        padding: 5px 0;
+    }
+
+    .slider-info {
+        padding-top: 70px;
+    }
+
+        .slider-info p {
+            width: 90%;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .slider-info img {
+            width: 40px;
+        }
+
+    .callbacks_tabs li {
+        margin: 0.5em 0.2em;
+    }
+
+    .callbacks_nav.prev {
+        left: 10%;
+    }
+
+    .callbacks_tabs {
+        left: 37.5%;
+    }
+
+    .skills .progress-bar {
+        padding-left: 170px;
+    }
+
+    .services-item img {
+        width: 60px;
+    }
+
+    .services-item h4 {
+        font-size: 18px;
+    }
+
+    .service1 .services-item,
+    .service2 .services-item {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .tabs nav a span {
+        font-size: 16px;
+    }
+
+    .team h4 {
+        font-size: 21px;
+    }
+
+    .team-top-text {
+        height: 206px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 206px;
+    }
+
+    ul.social {
+        margin: 95px 0 0 0;
+    }
+
+    .clients p {
+        padding: 0;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .contact h4 {
+        font-size: 23px;
+    }
+
+    .copyright p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .callbacks_nav {
+        display: none;
+    }
+
+    .callbacks_tabs {
+        display: none;
+    }
+
+    .slider-info h3 {
+        font-size: 25px;
+    }
+
+    .about-image {
+        margin: 30px 0px;
+    }
+
+    .skills-grid {
+        margin: 20px 30px;
+    }
+
+    .skills .progress-bar {
+        padding-left: 150px;
+    }
+
+    .portfolio h3 {
+        margin-bottom: 5px !important;
+    }
+
+    .gallery-item {
+        width: 50%;
+    }
+
+    .team-top-text {
+        height: 173px;
+        padding-left: 5px;
+    }
+
+    .team h4 {
+        font-size: 18px;
+        margin: 5px 0 10px;
+    }
+
+    .team h5 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 173px;
+    }
+
+    ul.social {
+        margin: 75px 0 0 0;
+    }
+
+    .clients h4 {
+        font-size: 20px;
+        margin: 7px 0;
+    }
+
+    .client h5 {
+        font-size: 14px;
+    }
+
+    .contact-grid {
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    .contact h5 {
+        font-size: 16px;
+    }
+
+    .contact input.text,
+    .contact textarea {
+        padding: 15px 0;
+        margin-bottom: 25px;
+    }
+
+    .contact textarea {
+        height: 100px;
+    }
+
+    .contact input.more_btn {
+        margin-bottom: 20px;
+    }
+
+    .contact-grid p {
+        font-size: 13px;
+    }
+
+    .contact-email,
+    .contact-phone {
+        margin: 20px 0;
+    }
+
+    .copyright p {
+        line-height: 25px;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:384px) {
+    .top-bar .container {
+        padding: 0 5px;
+    }
+
+    .logo a {
+        font-size: 18px;
+    }
+
+    .slider-info h3 {
+        font-size: 23px;
+    }
+
+    li.menu__item {
+        width: 35%;
+    }
+
+    .about p,
+    .services p,
+    .team p,
+    .contact p {
+        width: 100%;
+        line-height: 23px;
+        font-size: 12px;
+    }
+
+    p.about-p-1,
+    p.about-p-2,
+    .services-item p,
+    .team-top-text p,
+    .contact-grid p {
+        font-size: 13px;
+    }
+
+    .about-info h3 {
+        margin-bottom: 15px;
+        font-size: 1.4em;
+    }
+
+    .about a {
+        padding: 7px 25px;
+    }
+
+    .skills-grid {
+        margin: 20px 10px;
+    }
+
+    .skills .progress-bar {
+        padding-left: 130px;
+    }
+
+    .tabs nav a span {
+        font-size: 15px;
+    }
+
+    #portfolio {
+        padding: 30px 0 0 0;
+    }
+
+    .team h4 {
+        font-size: 17px;
+        margin: 5px 0 5px;
+    }
+
+    .team h5 {
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    .team-top-text p {
+        line-height: 22px;
+    }
+
+    .team-top-text {
+        height: 158px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 159px;
+    }
+
+    ul.social {
+        margin: 65px 0 0 0;
+    }
+
+    #contact {
+        padding: 30px 0 10px 0;
+    }
+
+    .footer {
+        padding: 15px 0;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .service-grid {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .service1 .services-item,
+    .service2 .services-item {
+        padding: 20px 0 0px;
+    }
+
+    .team-top {
+        width: 100%;
+        padding: 0;
+    }
+
+    .team-top-text {
+        height: 200px;
+        padding: 20px;
+    }
+
+    .team h4 {
+        font-size: 20px;
+        margin: 5px 0 15px;
+    }
+
+    .team h5 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .view .mask,
+    .view .content {
+        height: 100%;
+    }
+
+    ul.social {
+        margin: 160px 0 0 0;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .slider-info h3 {
+        font-size: 20px;
+    }
+
+    .underline {
+        margin: 8px auto;
+    }
+
+    .slider-info p {
+        width: 95%;
+        font-size: 11px;
+    }
+
+    .slider-info img {
+        width: 35px;
+    }
+
+    .skills .progress-bar {
+        padding-left: 125px;
+    }
+
+    .service-grid {
+        padding: 0 15px;
+    }
+}
+@font-face {
+    font-family: 'MyFont';
+    src:url('~/Content/fonts/Cocon® Next Arabic-Light.otf') format('opentype');
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li {
+        float: left;
+        margin-left: 30px;
+        font-family:MyFont;
+    }
+    .navbar-collapse .navbar-nav.navbar-right:last-child {
+        margin-right: 5%;
+    }
+}
+@media screen and (max-width:320px) {
+    .logo {
+        width: 43%;
+    }
+
+        .logo a {
+            font-size: 16px;
+        }
+
+    .info {
+        width: 57%;
+    }
+
+        .info p {
+            font-size: 10px;
+            line-height: 20px;
+        }
+
+    .slider-info {
+        padding-top: 60px;
+    }
+
+    .underline {
+        margin: 5px auto;
+    }
+
+    .slider-info p {
+        margin-bottom: 5px;
+    }
+
+    .slider-info img {
+        width: 30px;
+    }
+
+    .menu--francisco .menu__link {
+        padding: 5px 0;
+    }
+
+    .skills-grid {
+        margin: 10px 0;
+    }
+
+    .skills .progress-bar {
+        padding-left: 105px;
+    }
+
+    .tabs nav a span {
+        font-size: 14px;
+    }
+
+    ul.social {
+        margin: 130px 0 0 0;
+    }
+}

@@ -1,0 +1,80 @@
+﻿@model Stack.DBContext.Entities.Category
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container">
+
+    <div class="navbar navbar-default">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li>
+                    <a href="/categories/index">Categories<span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <a href="/products/index">Products</a>
+                </li>
+                <li>
+                    <a href="/home/change">Change Password</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <form action="/logout" method="post">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log Out</button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Delete</h2>
+
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>Category</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ArName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ArName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ImgSrc)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ImgSrc)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</div>

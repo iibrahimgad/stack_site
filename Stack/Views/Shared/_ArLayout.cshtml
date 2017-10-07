@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-rtl.css" rel="stylesheet" />
+    <link href="~/Content/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row main-head-AR">
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius:30px;">
+                عربي <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="/home/index">English</a></li>
+                <li><a href="/home/arindex">عربي</a></li>
+            </ul>
+        </div>
+        <a class="mar-r-l" href="https://www.facebook.com/stackegypt" target="_blank"><img src="~/images/fb.svg" alt="Facebook" style="height:30px;width:30px;margin-top: -2px;" /></a>
+        <a data-toggle="modal" data-target="#myModal"><img src="~/images/info.png" style="height:25px;width:25px;margin-top: -2px;" /></a>
+    </div>
+    <div class="container-fluid">
+
+        <div style="clear:both;"></div>
+        <div class="navbar navbar-default  ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="~/images/logo-english.png" style="width: 180px;" />
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="menu__item"><a href="#home" class="white">الرئيسية</a></li>
+                        <li class="menu__item"><a href="#about" class="white">عن ستاك</a></li>
+                        <li class="menu__item"><a href="#services" class="white">الخدمات</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                المنتجات
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" id="categories"></ul>
+                        <li class="menu__item"><a href="#contact" class="white">تواصل معنا</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div style="clear:both;"></div>
+
+    
+        @RenderBody()
+    <div class="" id="contact" style="margin-top:70px;">
+        <div class="row" style="text-align:center;margin:30px 0;">
+            <img src="~/images/001-agenda.png" alt="Manufactory" class="img-scale" />
+            <h1>CONTACT</h1>
+            <p>We are glade to here from you for any feedback or complains... our customer service works 24h.</p>
+        </div>
+        <div class="container-fluid" style="background-color:#272727; color:#fff; padding:0; ">
+
+
+
+
+
+            <div class="row" style="margin:0;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.544172406575!2d31.332361953976665!3d30.107238444164132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145815eb405c347f%3A0xac9e4ebd96282cfa!2s18+El-Shaikh+Mohammed+Refaat%2C+El-Nozha%2C+Qism+El-Nozha%2C+Cairo+Governorate!5e0!3m2!1sar!2seg!4v1506008006609" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="row" style="margin:0;">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4 col-md-6">
+                    <h3>Your Openion is our commands</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Name</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Message</label>
+                            <textarea class="form-control" rows="6"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-default">SEND</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3>CONTACT INFO</h3>
+                    <h5>Stack Factory is located in ..... city with many outlets all over Egypt and a headquarter Office in Cairo.</h5>
+
+                    <div class="address">
+                        <h4 style="margin-top:25px;"><span class="glyphicon glyphicon-home c-blue" aria-hidden="true"></span> &ensp;<b>ADDRESS :</b>18th Al Shikh Mohamed Refaat St. Helipolis, Cairo, Egypt</h4>
+                    </div>
+                    <div class="contact-phone">
+                        <h4 style="margin-top:25px;"><span class="glyphicon glyphicon-earphone c-blue" aria-hidden="true"></span> &ensp;<b>Phone :</b> +22 62 380 355</h4>
+                        <h4 style="margin-top:25px;"><span class="glyphicon glyphicon-earphone c-blue" aria-hidden="true"></span> &ensp;<b>Phone :</b> +20 10 0000 6765</h4>
+                    </div>
+                    <div class="contact-email">
+                        <h4 style="margin-top:25px;"><span class="glyphicon glyphicon-envelope c-blue" aria-hidden="true"></span> &ensp;<b>Email :</b> <a class="c-white" href="mailto:sales@stack-electronics.com">sales@stack-electronics.com</a></h4>
+                        <h4 style="margin-top:25px;"><span class="glyphicon glyphicon-envelope c-blue" aria-hidden="true"></span> &ensp;<b>Email :</b> <a class="c-white" href="mailto:info@stack-electronics.com">info@stack-electronics.com</a></h4>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <p>
+                &copy; Stack-Electronics. All Rights Reserved | Design by Islam Ibrahim
+            </p>
+        </div>
+    </footer>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="margin-top: 150px;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Contact Info</h4>
+                </div>
+                <div class="modal-body">
+                    <h4 style="margin-top: 20px;"><a href="mailto:sales@stack-electronics.com" class="mar-r-l">sales@stack-electronics.com</a></h4>
+
+                    <h4 style="margin-top: 20px;"><a class="mar-r-l"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> &ensp; Phone : +2 0111 9111 172</a></h4>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(function () {
+                var jqxhr = $.get("/cat", function (data) {
+                    console.log(data);
+                    for (var x = 0; x < data.length;x++) {
+                        console.log(data[x]);
+                        $("#categories").append(`<li><a href="/categories/details/${data[x].Id}">${data[x].Name}</a> </li>`);
+                        $("#CategoryId").append(` <option value="${data[x].Id}">${data[x].Name}</option>`);
+                    }
+                })
+            });
+        });
+    </script>
+    <script>
+        // Select all links with hashes
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function (event) {
+              // On-page links
+              if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+              ) {
+                  // Figure out element to scroll to
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                  // Does a scroll target exist?
+                  if (target.length) {
+                      // Only prevent default if animation is actually gonna happen
+                      event.preventDefault();
+                      $('html, body').animate({
+                          scrollTop: target.offset().top
+                      }, 1000, function () {
+                          // Callback after animation
+                          // Must change focus!
+                          var $target = $(target);
+                          $target.focus();
+                          if ($target.is(":focus")) { // Checking if the target was focused
+                              return false;
+                          } else {
+                              $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                              $target.focus(); // Set focus again
+                          };
+                      });
+                  }
+              }
+          });
+    </script>
+</body>
+</html>
