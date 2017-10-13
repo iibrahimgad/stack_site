@@ -128,7 +128,8 @@ namespace Stack.Controllers
         {
             Category category = await db.Categories.FindAsync(id);
             db.Categories.Remove(category);
-            var path = Path.Combine(Server.MapPath("~/images"), category.ImgSrc);
+            var imgSrc = category.Name + ".jpg";
+            var path = Path.Combine(Server.MapPath("~/images"),imgSrc);
             if (System.IO.File.Exists(path))
                 System.IO.File.Delete(path);
             await db.SaveChangesAsync();

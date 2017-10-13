@@ -124,8 +124,9 @@ namespace Stack.Controllers
         public async Task<ActionResult> DeleteConfirmed(long id)
         {
             Product product = await db.Products.FindAsync(id);
+            var imgSrc = product.Name + ".jpg";
             db.Products.Remove(product);
-            var path = Path.Combine(Server.MapPath("~/images"), product.ImgSrc);
+            var path = Path.Combine(Server.MapPath("~/images"), imgSrc);
             if (System.IO.File.Exists(path))
                 System.IO.File.Delete(path);
             await db.SaveChangesAsync();
