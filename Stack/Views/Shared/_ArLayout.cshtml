@@ -9,7 +9,7 @@
     <link href="~/Content/style.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="row main-head-AR">
+    <div class="main-head-AR">
         <div class="btn-group">
             <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border-radius:30px;">
                 عربي <span class="caret"></span>
@@ -33,16 +33,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="/home/arindex">
                         <img src="~/images/logo-english.png" style="width: 180px;" />
                     </a>
                 </div>
                 <div class="navbar-collapse collapse">
 
                     <ul class="nav navbar-nav navbar-left">
-                        <li class="menu__item"><a href="#home" class="white">الرئيسية</a></li>
-                        <li class="menu__item"><a href="#about" class="white">عن ستاك</a></li>
-                        <li class="menu__item"><a href="#services" class="white">الخدمات</a></li>
+                        <li class="menu__item"><a href="/home/arindex#home" class="white">الرئيسية</a></li>
+                        <li class="menu__item"><a href="/home/arindex#about" class="white">عن ستاك</a></li>
+                        <li class="menu__item"><a href="/home/arindex#services" class="white">الخدمات</a></li>
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 المنتجات
@@ -158,8 +158,8 @@
                     console.log(data);
                     for (var x = 0; x < data.length;x++) {
                         console.log(data[x]);
-                        $("#categories").append(`<li><a href="/categories/details/${data[x].Id}">${data[x].Name}</a> </li>`);
-                        $("#CategoryId").append(` <option value="${data[x].Id}">${data[x].Name}</option>`);
+                        $("#categories").append(`<li><a href="/arcategories/details/${data[x].Id}">${data[x].ArName}</a> </li>`);
+                        $("#CategoryId").append(` <option value="${data[x].Id}">${data[x].ArName}</option>`);
                     }
                 })
             });

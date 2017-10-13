@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿using Stack.DBContext;
+using Stack.DBContext.Entities;
 using System.Data.Entity;
-using System.Linq;
-using System.Threading.Tasks;
+using System.IO;
 using System.Net;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using Stack.DBContext;
-using Stack.DBContext.Entities;
-using System.IO;
 
 namespace Stack.Controllers
 {

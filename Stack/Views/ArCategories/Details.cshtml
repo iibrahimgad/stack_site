@@ -1,0 +1,49 @@
+﻿@model Stack.DBContext.Entities.Category
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_ArLayout.cshtml";
+}
+
+
+<div class="pic" style="background-image: url('../../images/@Model.ImgSrc');">
+    <h2>@Model.ArName</h2>
+</div>
+<div class="container">
+    <div>
+        @if (Model.Products.Count != 0)
+        {
+            foreach (var item in Model.Products)
+            {
+                <div class="modal fade bs-example-modal-lg" id="@item.Id" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <img src="~/images/@item.ImgSrc" style="width:100%;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 " style="margin-top:5px;min-height: 400px;">
+                    <div class="row" style="padding-top:40px; padding-left:40px;padding-bottom:40px;">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="#" data-toggle="modal" data-target="#@item.Id">
+                                    <img src="~/images/@item.ImgSrc" alt="Product Img" />
+                                </a>
+                                <div class="caption">
+                                    <h3>@item.ArName</h3>
+                                    <p> @item.ArDescription</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="product2"></div>
+                </div>
+            }
+        }
+    </div>
+    <p>
+        @*@Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |*@
+        @*@Html.ActionLink("Back to List", "Index")*@
+    </p>
+</div>
