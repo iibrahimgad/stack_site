@@ -6,11 +6,11 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <link href="~/Content/style.css" rel="stylesheet" />
-    
+
 </head>
 <body>
 
-    
+
 
     <!-- Modal -->
     <div class=" main-head">
@@ -64,8 +64,8 @@
     </div>
     <div style="clear:both;"></div>
 
-    
-        @RenderBody()
+
+    @RenderBody()
     <div class="" id="contact" style="margin-top:70px;">
         <div class="row" style="text-align:center;margin:30px 0;">
             <img src="~/images/001-agenda.png" alt="Manufactory" class="img-scale" />
@@ -143,11 +143,11 @@
                 <div class="modal-body">
                     <h4 style="margin-top: 20px;"><a href="mailto:sales@stack-electronics.com" class="mar-r-l">sales@stack-electronics.com</a></h4>
 
-                    <h4  style="margin-top: 20px;"><a class="mar-r-l"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> &ensp; Phone : +2 0111 9111 172</a></h4>
-                    
-                    
+                    <h4 style="margin-top: 20px;"><a class="mar-r-l"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> &ensp; Phone : +2 0111 9111 172</a></h4>
+
+
                 </div>
-               
+
             </div>
         </div>
     </div>
@@ -157,57 +157,102 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $(function () {
+                //var jqxhra = $.get("/carouselapi", function (data) {
+                //    console.log("carouselapi Data");
+                //    console.log(data);
+                //    for (var i = 0; i < data.length; i++) {
+                //        $("#carouselItems").append(
+                //            '<li data-target="#myCarousel" data-slide-to="' + (i+1)  +'"'+
+                //            //(i === 0 ? ' class="active"' : ' class=""') +
+                //            '></li>'
+                //        );
+                //        $("#innerCarousel").append(
+                //            '<div class="item ' +
+                //            //(i === 0 ? 'active' : '') +
+                //            '">' +
+                //            '   <img src="~/images/' + data[i].ImgSrc + '" alt="Production">' +
+                //            '   <div class="carousel-caption">' +
+                //            '       <h3>' + data[i].Title + '</h3>' +
+                //            '       <p>' + data[i].Description + '</p>' +
+                //            '   </div>' +
+                //            '</div>'
+                //        );
+                //    }
+                //});
                 var jqxhr = $.get("/cat", function (data) {
                     console.log(data);
-                    for (var x = 0; x < data.length;x++) {
+                    if (data.length > 2)
+                        $("#xmargin").detach();
+                    var img = new HTMLImageElement();
+                    img.src = "~/images/Accessories.jpg";
+                    img.alt = "Accessories";
+                    img.style = "width:'100%'";
+                    for (var x = 0; x < data.length; x++) {
                         console.log(data[x]);
-                        $("#categories").append(`<li><a href="/categories/details/${data[x].Id}">${data[x].Name}</a> </li>`);
-                        $("#CategoryId").append(` <option value="${data[x].Id}">${data[x].Name}</option>`);
+                        $("#categories").append('<li><a href="/categories/details/' + data[x].Id + '">' + data[x].Name + '</a> </li>');
+                        $("#CategoryId").append('   <option value="' + data[x].Id + '">' + data[x].Name + '</option>');
+
+                        $("#servicesRows").append(
+                            '<div class="col-md-4" style="margin- top:10px;">' +
+                            '<div class="thumb" >' +
+                            '<img src="~/images/' + data[x].ImgSrc + '" alt="Service" style="width:100%;">' +
+                             //img.HTMLImageElement +
+                            '<div class="services-info">' +
+                            '<h4>' + data[x].Name + '</h4>' +
+                            '</div>' +
+                            '<div class="overlay-bottom">' +
+                            '<div class="text">' +
+                            '<h4>' + data[x].Name + '</h4>' +
+                            '<p>We offer high standard caples, mice and keyboards with long life time and Royal materials</p>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>' +
+                            '</div>');
                     }
-                })
+                });
             });
         });
     </script>
     <script>
         // Select all links with hashes
         $('a[href*="#"]')
-          // Remove links that don't actually link to anything
-          .not('[href="#"]')
-          .not('[href="#0"]')
-          .click(function (event) {
-              // On-page links
-              if (
-                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                &&
-                location.hostname == this.hostname
-              ) {
-                  // Figure out element to scroll to
-                  var target = $(this.hash);
-                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                  // Does a scroll target exist?
-                  if (target.length) {
-                      // Only prevent default if animation is actually gonna happen
-                      event.preventDefault();
-                      $('html, body').animate({
-                          scrollTop: target.offset().top
-                      }, 1000, function () {
-                          // Callback after animation
-                          // Must change focus!
-                          var $target = $(target);
-                          $target.focus();
-                          if ($target.is(":focus")) { // Checking if the target was focused
-                              return false;
-                          } else {
-                              $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                              $target.focus(); // Set focus again
-                          };
-                      });
-                  }
-              }
-          });
+            // Remove links that don't actually link to anything
+            .not('[href="#"]')
+            .not('[href="#0"]')
+            .click(function (event) {
+                // On-page links
+                if (
+                    location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                    &&
+                    location.hostname == this.hostname
+                ) {
+                    // Figure out element to scroll to
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    // Does a scroll target exist?
+                    if (target.length) {
+                        // Only prevent default if animation is actually gonna happen
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000, function () {
+                            // Callback after animation
+                            // Must change focus!
+                            var $target = $(target);
+                            $target.focus();
+                            if ($target.is(":focus")) { // Checking if the target was focused
+                                return false;
+                            } else {
+                                $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                                $target.focus(); // Set focus again
+                            };
+                        });
+                    }
+                }
+            });
     </script>
-   
-    
-   
+
+
+
 </body>
 </html>

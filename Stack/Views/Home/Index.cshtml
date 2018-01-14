@@ -11,14 +11,14 @@
     <!-- Slider -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel" >
         <!-- Indicators -->
-        <ol class="carousel-indicators">
+        <ol id="carouselItems" class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+        <div id="innerCarousel" class="carousel-inner">
 
             <div class="item active">
                 <img src="~/images/slide1.jpg" alt="Production">
@@ -39,7 +39,6 @@
             <div class="item">
                 <img src="~/images/slide3.jpg" alt="Quality" >
                 <div class="carousel-caption">
-                    <h3> @*<img src="~/images/vector.png" class="img-responsive caption" alt="led" />*@</h3>
                     <h3>Enjoy Day light</h3>
                     <p>Strongest led lamb in Egypt</p>
                 </div>
@@ -94,9 +93,10 @@
         <h1>SERVICES</h1>
         <p>We offer a diversity of services all in the field of electronics and lighting varies according to cutomer needs with an innovative smart approach</p>
     </div>
-    <div class="row">
-        <siv class="col-md-2"></siv>
-        <div class="col-md-4" style="margin-top:10px;">
+    <div class="row" id="servicesRows">
+        <siv id="xmargin" class="col-md-2"></siv>
+
+        @*<div class="col-md-4" style="margin-top:10px;">
             <div class="thumb">
                 <img src="~/images/s01.png" alt="Manufactory"style="width:100%;">
                 <div class="services-info">
@@ -111,6 +111,7 @@
                 </div>
             </div>
         </div>
+
         <div class="col-md-4" style="margin-top:10px;">
             <div class="thumb">
                 <img src="~/images/s02.png" alt="Manufactory"style="width:100%;">
@@ -125,7 +126,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>*@
+     
+
     </div>
     <div class="clearfix"></div>
 </div>

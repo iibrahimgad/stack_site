@@ -24,7 +24,7 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <form action="/logout" method="post">
+                    <form action="/home/logout" method="post">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log Out</button>
                     </form>
                 </li>
@@ -33,7 +33,7 @@
     </div>
 
     <h2>Change</h2>
-    @using (Html.BeginForm("change", "home", FormMethod.Post,))
+    @using (Html.BeginForm("change", "home", FormMethod.Post))
     {
         @Html.AntiForgeryToken()
 

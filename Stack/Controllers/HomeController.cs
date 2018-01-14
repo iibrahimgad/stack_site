@@ -79,6 +79,7 @@ namespace Stack.Controllers
             ViewBag.Msg = res;
             return View();
         }
+
         [HttpPost]
         [Authorize]
         public ActionResult Logout(FormCollection fc)

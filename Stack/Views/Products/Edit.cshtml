@@ -15,10 +15,13 @@
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-left">
                 <li>
-                    <a href="/categories/index">Categories<span class="sr-only">(current)</span></a>
+                    <a href="/categories/index">Categories</a>
                 </li>
                 <li>
-                    <a href="/products/index">Products</a>
+                    <a href="/products/index">Products<span class="sr-only">(current)</span></a>
+                </li>
+                <li>
+                    <a href="/carousel/index">Carousel</a>
                 </li>
                 <li>
                     <a href="/home/change">Change Password</a>
@@ -26,14 +29,13 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <form action="/logout" method="post">
+                    <form action="/home/logout" method="post">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log Out</button>
                     </form>
                 </li>
             </ul>
         </div>
     </div>
-
     <h2>Edit</h2>
 
     @using (Html.BeginForm("create", "products", FormMethod.Post, new { enctype = "multipart/form-data" }))
